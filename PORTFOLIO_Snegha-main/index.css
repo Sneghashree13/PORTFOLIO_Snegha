@@ -1,0 +1,105 @@
+/* General Styles for Light Mode */
+body {
+    background-color: #f9f9f9; /* Light mode background */
+    color: #333; /* Light mode text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background */
+    color: #f1f1f1; /* Dark mode text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff; /* Navbar background for light mode */
+    color: white; /* Navbar text color for light mode */
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e; /* Navbar background for dark mode */
+    color: #f1f1f1; /* Navbar text color for dark mode */
+}
+
+/* Link Styles */
+.nav-links a {
+    color: white; /* Link color for light mode */
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .nav-links a {
+    color: #f1f1f1; /* Link color for dark mode */
+}
+
+.nav-links a:hover {
+    color: #ffdd57; /* Hover color remains the same */
+}
+
+/* Theme Toggle Button */
+.dark-mode-toggle {
+    background-color: white; /* Light mode button */
+    color: #007bff;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #1e1e1e; /* Dark mode button */
+    color: #ffdd57; /* Text color for dark mode button */
+    border: 2px solid #ffdd57;
+}
+
+/* Section-Specific Styling */
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.home h1 {
+    color: #007bff; /* Light mode heading */
+}
+
+body.dark-mode .home h1 {
+    color: #ffdd57; /* Dark mode heading */
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+}
+
+.about h1 {
+    color: #007bff; /* Light mode heading */
+}
+
+body.dark-mode .about h1 {
+    color: #ffdd57; /* Dark mode heading */
+}
+
+.about p {
+    color: #333; /* Light mode text */
+}
+
+body.dark-mode .about p {
+    color: #f1f1f1; /* Dark mode text */
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1; /* Light mode footer background */
+    color: #333; /* Light mode footer text */
+    padding: 10px;
+    text-align: center;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Dark mode footer background */
+    color: #f1f1f1; /* Dark mode footer text */
+}
